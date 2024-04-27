@@ -1,10 +1,11 @@
-let name1 =  prompt("ismingizni kiriting")
-let test = prompt("harf yozing")
+let name1 = prompt("ismingizni kiriting").toLocaleLowerCase();
+let letter = prompt("harf kiriting").toLocaleLowerCase();
 
+let check = name1.includes(letter);
 
-if (test) {
-alert("sizning ismingizda bu harf mavjud")
+if (check) {
+    console.log("siz kiritgan"  +  letter  +  " harif mavjud ");
     
 }else{
-alert("sizning ismingizda bu harf mavjud emas")
+    console.log("siz kiritgan  "  +  letter  +  " harif mavjud emas ");
 }
